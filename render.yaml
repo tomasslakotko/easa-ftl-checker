@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: easa-ftl-checker
+    env: node
+    buildCommand: npm run render-build
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production 
